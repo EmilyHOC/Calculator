@@ -1,0 +1,32 @@
+package day1111;
+
+import java.awt.FlowLayout;
+
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+/**
+ * Created by Intellij IDEA.
+ * User: 10579.
+ * Date: 2017/11/12.
+ * Time: 12:17.
+ */
+public class TestJLabel {
+    public static void main(String[] args) {
+        JFrame jf=new JFrame();
+        jf.setLayout(new FlowLayout());
+        JLabel j1=new JLabel("测试JLable");
+        jf.add(j1);
+        Icon ic=new ImageIcon("D:\\原来放在桌面的东西\\桌面文件夹\\聊天文件\\666.jpg");
+
+        JLabel j12=new JLabel(ic);
+        jf.add(j12);//把图片加载到文本框里
+        jf.pack();//自动设置窗口大小
+        jf.setVisible(true);//设置窗口可见
+        jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//关闭时退出
+
+
+    }
+}
