@@ -1,0 +1,34 @@
+package day1111;
+
+import java.awt.GridBagLayout;
+import java.awt.GridLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+/**
+ * Created by Intellij IDEA.
+ * User: 10579.
+ * Date: 2017/11/11.
+ * Time: 21:48.
+ */
+public class TestGridLayout {
+    public static void main(String[] args) {
+          JFrame jf=new JFrame();
+          jf.setLayout(null);
+          JButton jb=new JButton("按钮");
+          //jf.setLayout(new GridLayout(4,5,4,4));
+          /*for(int i=0;i<20;i++){
+              jf.add(new JButton("按钮"+i));
+          }*/
+          jf.setBounds(100,200,80,40);
+          jf.add(jb);
+
+        jf.setBounds(100,100,30,20);//直接定位主键的位置，不用布局管理器
+
+        jf.setSize(400,300);
+        jf.setVisible(true);
+        jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+}
+
