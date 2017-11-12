@@ -1,0 +1,29 @@
+package day1111;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+/**
+ * Created by Intellij IDEA.
+ * User: 10579.
+ * Date: 2017/11/11.
+ * Time: 20:46.
+ */
+public class TestFlowLayout {
+    public static void main(String[] args) {
+        JFrame jf=new JFrame();
+
+        jf.setLayout(new FlowLayout());//对齐方式，默认居中对齐
+
+        for(int i=0;i<10;i++){
+            jf.add(new JButton("按钮"+i));
+        }
+
+        jf.setSize(400,300);
+        jf.setVisible(true);
+        jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+    }
+}
